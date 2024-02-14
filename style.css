@@ -98,3 +98,23 @@ nav {
 .nav2 :hover {
     cursor: pointer;
 }
+.cont_photos {
+    margin: 0 auto;
+    justify-content: center;
+    width: 900px;
+}
+.cont_photos1 {
+    display: inline-flex;
+    gap: 20px;
+}
+.cont_photos2 {
+    display: inline-flex;
+    gap: 20px;
+}
+img {
+    width: 250px;
+}
+.cont_a {
+    text-align: center;
+    margin-top: 200px;
+}
