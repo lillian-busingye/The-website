@@ -104,6 +104,7 @@ nav {
 .cont_photos {
     margin: 0 auto;
     justify-content: center;
+    margin-bottom: 70px;
 
 }
 .cont_photos1 {
@@ -141,4 +142,11 @@ h1 {
 }
 .descrip {
     text-decoration: none;
+    color: blue;
+}
+.descript {
+    text-decoration: none;
+    color:#36454F;
+    font: bolder;
+    font-size: 18px;
 }
