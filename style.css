@@ -1,6 +1,6 @@
 nav {
     width: 100%;
-    height: 20%;
+    height: 18%;
     background: rgb(248, 247, 246);
     position: fixed;
 }
@@ -73,13 +73,13 @@ nav {
     cursor: pointer;
 }
 
-.p {
+.para1 {
     border-radius: 10px;
     color: rgb(115, 114, 114);
     border: none;
 }
 
-.p :hover {
+.para1 :hover {
     cursor: pointer;
     color: rgb(114, 112, 112);
 }
