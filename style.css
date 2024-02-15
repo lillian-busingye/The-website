@@ -3,6 +3,7 @@ nav {
     height: 18%;
     background: rgb(248, 247, 246);
     position: fixed;
+    top: 0;
 }
 
 .icon {
