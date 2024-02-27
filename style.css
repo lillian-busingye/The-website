@@ -151,10 +151,17 @@ header {
 .container3 {
     background-color: rgb(240, 237, 237);
     width: 100%;
-    
+
 }
 
 .page {
+    height: 290px;
+    background-color: #fff;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.page:hover {
     height: 290px;
     background-color: #fff;
     padding: 30px;
