@@ -9,7 +9,6 @@ nav {
     background: rgb(248, 247, 246);
     position: sticky;
     top: 0;
-    overflow: hidden;
     margin-top: 0;
 
 }
@@ -34,24 +33,18 @@ nav {
 
 .p1 {
     display: flex;
-    align-items: center;
     gap: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
+    text-align: center;
 
-}
-
-.p1 :hover {
-    cursor: pointer;
-    color: rgb(105, 100, 100);
 }
 
 .btn1 {
     width: 60%;
     display: flex;
-    padding-top: 16px;
     border: 1px solid rgb(205, 198, 198);
     border-radius: 5px;
+    justify-content: center;
+
 }
 
 .btn2 {
@@ -69,7 +62,6 @@ nav {
 
 .signIn {
     display: flex;
-    padding-right: 50px;
 }
 
 .btn3 {
@@ -78,19 +70,24 @@ nav {
     border: none;
 }
 
-.btn3 :hover {
+.signIn :hover {
     cursor: pointer;
+    background-color: lightgrey;
+    padding: 8px;
+    border: 1px solid lightgrey;
 }
 
 .para1 {
-    border-radius: 10px;
+
     color: rgb(115, 114, 114);
-    border: none;
 }
 
 .para1 :hover {
     cursor: pointer;
-    color: rgb(114, 112, 112);
+    padding: 8px;
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    border-radius: 8px;
 }
 
 .nav2 {
@@ -99,11 +96,17 @@ nav {
     padding-top: 50px;
 }
 
+ul.menu-container {
+    width: 100%;
+    display: flex;
+}
+
 .list {
     border: none;
     padding: 15px;
     color: gray;
     background: rgb(248, 247, 246);
+    text-decoration: none;
 }
 
 .nav2 :hover {
@@ -286,10 +289,45 @@ header {
 }
 
 .list {
+    list-style-type: none;
+    position: relative;
     border: none;
     padding: 15px;
     color: gray;
     background: rgb(248, 247, 246);
+}
+
+.dropdown-menu {
+    display: none;
+    padding: 5px;
+    position: absolute;
+    border: 0px solid;
+    z-index: 2;
+    border-radius: 6px;
+    background: white;
+    margin-top: 5px;
+    min-width: 130px;
+
+}
+
+
+.list:hover .dropdown-menu {
+    display: block;
+
+}
+
+li.dropdown-item {
+    font-size: 14px;
+    list-style: none;
+    padding: 13px 6px;
+    color: rgb(120, 117, 117);
+
+}
+
+li.dropdown-item:hover {
+    background-color: lightgrey;
+    border-radius: 6px;
+    color: rgb(62, 62, 62);
 }
 
 .nav2 :hover {
