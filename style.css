@@ -1,10 +1,14 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Fira Sans, Helvetica Neue, Arial, sans-serif;
+}
+
+
 nav {
     width: 100%;
     height: 18%;
     background: rgb(248, 247, 246);
     position: sticky;
     top: 0;
-    overflow: hidden;
     margin-top: 0;
 
 }
@@ -29,24 +33,18 @@ nav {
 
 .p1 {
     display: flex;
-    align-items: center;
     gap: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
+    text-align: center;
 
-}
-
-.p1 :hover {
-    cursor: pointer;
-    color: rgb(105, 100, 100);
 }
 
 .btn1 {
     width: 60%;
     display: flex;
-    padding-top: 16px;
     border: 1px solid rgb(205, 198, 198);
     border-radius: 5px;
+    justify-content: center;
+
 }
 
 .btn2 {
@@ -64,7 +62,6 @@ nav {
 
 .signIn {
     display: flex;
-    padding-right: 50px;
 }
 
 .btn3 {
@@ -73,19 +70,24 @@ nav {
     border: none;
 }
 
-.btn3 :hover {
+.signIn :hover {
     cursor: pointer;
+    background-color: lightgrey;
+    padding: 8px;
+    border: 1px solid lightgrey;
 }
 
 .para1 {
-    border-radius: 10px;
+
     color: rgb(115, 114, 114);
-    border: none;
 }
 
 .para1 :hover {
     cursor: pointer;
-    color: rgb(114, 112, 112);
+    padding: 8px;
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    border-radius: 8px;
 }
 
 .nav2 {
@@ -94,11 +96,17 @@ nav {
     padding-top: 50px;
 }
 
+ul.menu-container {
+    width: 100%;
+    display: flex;
+}
+
 .list {
     border: none;
     padding: 15px;
     color: gray;
     background: rgb(248, 247, 246);
+    text-decoration: none;
 }
 
 .nav2 :hover {
@@ -122,11 +130,14 @@ nav {
     font-size: 20px;
 }
 
-.line3 {
+.card-container {
+    align-items: stretch;
     display: flex;
-    justify-content: center;
-    gap: 50px;
-
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0 0 40px
 }
 
 header {
@@ -135,37 +146,77 @@ header {
     padding: 50px;
 }
 
-.button {
-    border: none;
-    text-align: center;
-    border-radius: 1px solid rgb(198, 195, 195);
-    padding: 30px;
+.btn-container {
     width: 100%;
-    margin-top: 50px;
+    display: flex;
+}
+
+
+.button {
+
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px solid #505050;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 48px;
+    margin-bottom: auto;
+    margin-top: auto;
+    outline: 0;
+    padding: 8px 30px;
+    transition: all .1s ease-in;
+    white-space: nowrap;
+    margin: auto;
+    cursor: pointer;
 }
 
 .button :hover {
     cursor: pointer;
+
 }
 
 .container3 {
     background-color: rgb(240, 237, 237);
     width: 100%;
-    
+
 }
 
-.page {
-    height: 290px;
+.card {
+    height: auto;
     background-color: #fff;
-    padding: 30px;
-    box-shadow: 0 0 2rem gray;
+    cursor: pointer;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto 40px;
+    max-width: 265px;
+    padding: 25px 25px 0;
+    flex-basis: 19%;
+}
+
+.card:hover {
+    height: auto;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .1);
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto 40px;
+    max-width: 265px;
+    padding: 25px 25px 0;
+    flex-basis: 19%;
 }
 
 .icons {
     bottom: 0;
 }
 
-.page :hover {
+.card :hover {
     cursor: pointer;
     transform: (1.2);
 }
@@ -238,10 +289,45 @@ header {
 }
 
 .list {
+    list-style-type: none;
+    position: relative;
     border: none;
     padding: 15px;
     color: gray;
     background: rgb(248, 247, 246);
+}
+
+.dropdown-menu {
+    display: none;
+    padding: 5px;
+    position: absolute;
+    border: 0px solid;
+    z-index: 2;
+    border-radius: 6px;
+    background: white;
+    margin-top: 5px;
+    min-width: 130px;
+
+}
+
+
+.list:hover .dropdown-menu {
+    display: block;
+
+}
+
+li.dropdown-item {
+    font-size: 14px;
+    list-style: none;
+    padding: 13px 6px;
+    color: rgb(120, 117, 117);
+
+}
+
+li.dropdown-item:hover {
+    background-color: lightgrey;
+    border-radius: 6px;
+    color: rgb(62, 62, 62);
 }
 
 .nav2 :hover {
